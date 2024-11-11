@@ -79,7 +79,7 @@ export PATH=$PATH:/usr/bin/python3.13				 # Adding Python3.13 to path for easier
 
 # Starship install
 #curl -sS https://starship.rs/install.sh | sh
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 # Colorscript Gitlad @ "https://gitlab.com/dwt1/shell-color-scripts"
 # DistroTube's color-scripts install
