@@ -140,3 +140,5 @@ alias pushit="git add .; git commit -m 'diff it out'; git push -u origin main"
 
 # Shortcuts for non-vanilla programs
 alias copy="xclip -selection clipboard"
+
+alias arduinoIDE="~/bin/arduino-ide_2.3.4_Linux_64bit.AppImage &"
