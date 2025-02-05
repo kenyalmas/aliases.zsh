@@ -50,6 +50,11 @@
 #export DEFAULTPS1=$PS1
 #export PS1="i\[\033[1;31m\]\u@\H\[\033[1;37m\]:\[\033[1;32m\]\w\n> \[$(tput sgr0)\]"
 
+# Ghostty shell integration for Bash. This should be at the top of your bashrc!
+if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
+    builtin source "${GHOSTTY_RESOURCES_DIR}/shell-integration/zsh/ghostty.zsh"
+fi
+
 if [ -d "$HOME/Git" ] ;
 then PATH="$HOME/Git:$PATH"
 fi
@@ -86,7 +91,7 @@ export PATH=$PATH:/usr/bin/python3.13				 # Adding Python3.13 to path for easier
 #git clone https://gitlab.com/dwt1/shell-color-scripts.git
 #cd shell-color-scripts
 #sudo make install
-colorscript random
+#colorscript random
 
 # Circuitpython needs this path
 #export PATH=/home/$USER/bin/gcc-arm-none-eabi-10-2020-q4-major/bin:$PATH
